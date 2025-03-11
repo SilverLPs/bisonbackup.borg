@@ -44,7 +44,6 @@ if [[ -n "$VAR_REMOTEPATH" ]]; then
 else
   borg create --stats "$VAR_DESTINATION"::"$BACKUPTIME" "$VAR_SOURCE" -v
 fi
-#borg create --stats --remote-path=borg-1.1 ssh://u355799@u355799.your-storagebox.de:23/./backup/QC::"$BACKUPTIME" "/R6_6X_8TB_HDD/Quantum-COLOSSAL/Quantum-COLOSSAL/0 Online-Backup (max 1 TB)" -v
 echo
 export BORG_PASSPHRASE="cleared"
 unset BORG_PASSPHRASE
